@@ -1,0 +1,28 @@
+.counter__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter__item {
+  width: 33%;
+  text-align: center;
+  padding: 100px;
+}
+
+.counter__number,
+.counter__title {
+  background: var(--counter-color);
+  background-size: 100% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.counter__number {
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.counter__title {
+  font-size: 1.5rem;
+}
