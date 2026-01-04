@@ -1,33 +1,39 @@
-// App.jsx
-
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-// Your existing imports are perfect
 import Header from './components/Header/Header';
 import Hero from "./components/UI/Hero";
 import Counter from "./components/UI/Counter";
 import Services from './components/UI/Services';
-import Testimonial from './components/UI/Testimonial';
-
-
-// FIX: Add the missing import statement for the About component
-import About from './components/UI/About'; // Make sure this path is correct!
+import About from './components/UI/About';
 import Team from './components/UI/Team';
 import Blog from './components/UI/Blog';
+import Testimonial from './components/UI/Testimonial';
+import Footer from './components/UI/Footer';
 
 function App() {
+
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light');
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
     <>
-      <Header />
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero />
       <Counter />
       <Services />
-       <About /> 
+      <About />
       <Team />
-      <Blog/>
+      <Blog />
       <Testimonial />
-     
+      <Footer />
     </>
   );
 }

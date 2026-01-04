@@ -1,0 +1,123 @@
+.footer {
+  padding: 80px 0 30px 0;
+  background-color: #0b0b1b; /* Dark background to match testimonials */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Brand Section */
+.footer__logo {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer__logo h2 {
+  color: #6c63ff; /* Brand color */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footer__logo .description {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Social Icons Placeholder */
+.social__links {
+  display: flex;
+  gap: 15px;
+}
+
+.social__links span {
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social__links span:hover {
+  background: #6c63ff;
+  transform: translateY(-3px);
+}
+
+/* Link Columns */
+.footer__quick-links {
+  flex: 0 1 150px;
+}
+
+.quick__links-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.quick__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick__links-item {
+  margin-bottom: 12px;
+}
+
+.quick__links-item a {
+  color: #aaa;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Hover effect: Subtle slide-to-right */
+.quick__links-item a:hover {
+  color: #6c63ff;
+  padding-left: 5px;
+}
+
+/* Bottom Copyright Bar */
+.footer__bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer__logo, .footer__quick-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social__links {
+    margin-bottom: 2rem;
+  }
+}
