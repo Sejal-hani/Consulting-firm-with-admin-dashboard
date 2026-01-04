@@ -2,39 +2,45 @@ import React from "react";
 import "../../styles/Team.css";
 
 import team01 from "../../images/team-01.png";
-import team02 from "../../images/team-02.png";
+
 import team03 from "../../images/team-03.png";
 import team04 from "../../images/team-04.png";
 
 const teamMembers = [
   {
     imgUrl: team01,
-    name: "Johnny Doe",
-    position: "Software Engineer",
+    name: "Sunidhi",
+
+    position: "Senior Software Engineer",
+
   },
  
   {
     imgUrl: team03,
-    name: "Michael Lee",
-    position: "Business Analyst",
+    name: "Amit Sharma",
+
+
+   position: "Business & Technology Analyst",
+
   },
   {
     imgUrl: team04,
-    name: "Emily Brown",
+    name: "Pari Hiran",
     position: "Project Manager",
   },
 ];
 
 const Team = () => {
   return (
-    <section className="our__team">
+    <section className="our__team" id = 'careers'>
       <div className="container">
         {/* Section Header */}
         <div className="team__content">
           <h6 className="subtitle">Our Team</h6>
           <h2>
-            Meet With <span className="highlight">Our Experts</span>
-          </h2>
+  Meet the Minds Behind <span className="highlight">Our Solutions</span>
+</h2>
+
         </div>
 
         {/* Team Cards */}

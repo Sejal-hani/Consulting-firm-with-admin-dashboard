@@ -6,27 +6,35 @@ import lightHeroBg from '../../images/light-hero-bg.jpg';
 
 const Hero = ({ theme }) => {
   return (
-    <section className="hero__section">
+    <section className="hero__section" id="home">
       <div className="container">
         <div className="hero__wrapper">
 
           <div className="hero__content">
-            <h2>We're Creating Perfect</h2>
-            <h2>Digital Products</h2>
-            <h2 className="highlight">Promote your brand</h2>
+            <h2>Future-Ready IT Solutions</h2>
+<h2>That Power Business Growth</h2>
+<h2 className="highlight">Built for Scale & Performance</h2>
 
-            <p className="description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ad
-              eos sint tempora ipsam laborum, similique hic, ipsum laboriosam
-              blanditiis eum porro itaque quas minus. Laboriosam rerum animi
-              perferendis tempore?
-            </p>
+
 
             <div className="hero__btns">
-              <button className="primary__btn">Get Started Now</button>
-              <button className="secondary__btn">Discover More</button>
+              {/* Linked to services section */}
+              <button 
+                className="primary__btn" 
+                onClick={() => window.location.href = '#services'}
+              >
+                Get Started Now
+              </button>
+
+              {/* Fixed: Changed 'blog' to '#about' to scroll correctly */}
+              <button 
+                className="secondary__btn"
+                onClick={() => window.location.href = '#about'}
+              >
+                Discover More
+              </button>
             </div>
-          </div>
+          </div> {/* Added missing closing tag for hero__content */}
 
           <div className="hero__img">
             <img

@@ -7,8 +7,10 @@ const nav__links = [
   { path: '#about', display: 'About' },
   { path: '#services', display: 'Services' },
   { path: '#projects', display: 'Projects' },
-  { path: '#careers', display: 'Careers' },
+  { path: '#contact', display: 'Careers' },
   { path: '#contact', display: 'Contact us' },
+  
+  
 ];
 
 const Header = ({ theme, toggleTheme }) => {

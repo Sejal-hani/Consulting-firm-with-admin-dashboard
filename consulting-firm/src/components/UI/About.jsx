@@ -5,21 +5,23 @@ import aboutImg from "../../images/about-img01.png";
 const chooseData = [
   {
     icon: "ri-wifi-line",
-    title: "Fast working process",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis labore placeat vel possimus.",
+title: "Agile & Transparent Execution",    description:
+  "We follow agile workflows with clear communication, fast iterations, and on-time delivery to keep projects moving efficiently.",
+
   },
   {
     icon: "ri-team-line",
-    title: "Expert Team Members",
+    title: "Experienced Technology Experts",
+
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis labore placeat vel possimus.",
+  "Our team consists of skilled engineers, designers, and consultants with hands-on experience across modern technologies.",
   },
   {
     icon: "ri-customer-service-2-line",
     title: "24/7 Customer Support",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis labore placeat vel possimus.",
+  "We provide ongoing support, maintenance, and optimization to ensure your systems remain secure and future-ready.",
+
   },
 ];
 
@@ -31,14 +33,14 @@ const About = () => {
 
           {/* LEFT CONTENT */}
           <div className="about__content">
-            <h6 className="subtitle">Why choose us</h6>
-            <h2>We are committed to delivering the </h2>
-            <h3>best consulting services</h3>
-            <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-
+            <h6 className="subtitle">Why Choose Infrabyte</h6>
+            <h2>We Deliver Scalable, Secure</h2>
+<h3>IT Solutions That Drive Growth</h3>
+<p className="description">
+  We partner with startups, SMEs, and enterprises to design and deliver
+  technology solutions that solve real business challenges. Our focus is
+  on performance, security, and long-term scalability.
+</p>
             <div className="choose__us-wrapper">
               {chooseData.map((item, index) => (
                 <div className="choose__us-item" key={index}>

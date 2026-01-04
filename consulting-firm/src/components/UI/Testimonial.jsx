@@ -13,7 +13,7 @@ const TestimonialItem = ({ content, name, role, img }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="slider__item">
+    <div className="slider__item" id = 'Testimonial'>
       <div className="slider__item-content">
         <p
           className={`description ${isExpanded ? "expanded" : ""}`}
@@ -59,19 +59,21 @@ const settings = {
       role: "Sr. Product Designer",
       img: ava01,
       content:
-        "The consulting services provided were exceptional.  dolorum incidunt explicabo, perferendis nemo, itaque repellat consectetur quia sequi beatae! Unde dolor quidem voluptatum iste!",
-    },
+"They helped us move faster without sacrificing quality. The technical guidance and strategic input were critical during our early growth phase.",},
+
     {
       name: "Sarah Lee",
       role: "Marketing Lead",
       img: ava02,
-      content: "Professional, reliable, and result-oriented service. Their team was always available to answer our questions and provided valuable insights throughout the project.",
+content:
+"From planning to delivery, the process was smooth and transparent. We gained practical insights that directly improved our campaign performance and ROI.",
     },
     {
       name: "Alex Smith",
       role: "Startup Founder",
       img: ava03,
-      content: "They helped us scale faster than expected. The technical support and strategic advice were game-changers for our early-stage growth.",
+content:
+"The team delivered exactly what we needed — a scalable, well-architected solution that aligned with our product vision. Their communication and execution quality exceeded expectations.",
     },
   ];
 
@@ -79,10 +81,11 @@ const settings = {
     <section className="testimonial">
       <div className="container">
         <div className="slider__content-top">
-          <h6 className="subtitle">Testimonials</h6>
-          <h2>
-            Trusted by more than <span className="highlight">5000 customers</span>
-          </h2>
+<h6 className="subtitle">Client Testimonials</h6>
+<h2>
+  Trusted by Growing Teams & <span className="highlight">Global Businesses</span>
+</h2>
+
         </div>
 
         <div className="slider__wrapper">

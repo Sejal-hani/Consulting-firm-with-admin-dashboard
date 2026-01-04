@@ -78,3 +78,17 @@ body {
   transition: color 0.2s ease;
 }
 
+a {
+  text-decoration: none;
+  display: inline-block; /* Helps buttons keep their shape */
+}
+
+/* Ensure the button inside the link doesn't look different */
+a button {
+  cursor: pointer;
+}
+
+.hero__img {
+    margin-top: 45px;   /* adjust: 20px / 30px / 50px */
+}
+

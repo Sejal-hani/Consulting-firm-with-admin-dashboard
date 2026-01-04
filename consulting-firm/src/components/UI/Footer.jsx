@@ -2,22 +2,29 @@ import React from 'react';
 import '../../styles/Footer.css';
 
 const quickLinks01 = [
-  { path: '#', display: 'Analytics' },
-  { path: '#', display: 'Marketing' },
-  { path: '#', display: 'Commerce' },
+  { path: '#services', display: 'AI & Automation Solutions' },
+  { path: '#services', display: 'Custom Software & Web Development' },
+  { path: '#services', display: 'Digital Marketing Services' },
+  { path: '#services', display: 'E-commerce Solutions' },
+  { path: '#services', display: 'Mobile App Development' },
 ];
 
 const quickLinks02 = [
-  { path: '#', display: 'Documentation' },
-  { path: '#', display: 'Guides' },
-  { path: '#', display: 'API Status' },
+  { path: '#contact', display: 'Contact Support' },
+  { path: '#contact', display: 'Request Consultation' },
+  { path: '#contact', display: 'Technical Assistance' },
 ];
 
+
 const quickLinks03 = [
-  { path: '#', display: 'About' },
-  { path: '#', display: 'Careers' },
-  { path: '#', display: 'Blog' },
+  { path: '#about', display: 'About Us' },
+  { path: '#team', display: 'Our Team' },
+  { path: '#blog', display: 'Blog' },
+  { path: '#testimonial', display: 'Testimonials' },
+  { path: '#contact', display: 'Contact Us' },
 ];
+
+
 
 const Footer = () => {
   const year = new Date().getFullYear();

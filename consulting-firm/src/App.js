@@ -10,6 +10,8 @@ import Team from './components/UI/Team';
 import Blog from './components/UI/Blog';
 import Testimonial from './components/UI/Testimonial';
 import Footer from './components/UI/Footer';
+import Contact from './components/UI/Contact';
+
 
 function App() {
 
@@ -27,12 +29,14 @@ function App() {
     <>
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero theme ={theme}/>
+      
       <Counter />
       <Services />
       <About />
       <Team />
       <Blog />
       <Testimonial />
+      <Contact />
       <Footer />
     </>
   );

@@ -3,16 +3,17 @@ import "../../styles/Counter.css";
 
 const counterData = [
   {
-    number: "5k+",
-    text: "Clients Worldwide",
+    number: "150+",
+text: "Trusted Clients",
+
   },
   {
-    number: 350,
-    text: "Running Projects",
+    number: "50+",
+text: "Active Engagements",
   },
   {
-    number: 900,
-    text: "Projects Completed",
+    number: "300+",
+text: "Projects Delivered",
   },
 ];
 

@@ -6,9 +6,9 @@ import articleImg from "../../images/article.png";
 import caseStudyImg from "../../images/case-study.png";
 
 const blogData = [
-  { imgUrl: videoImg, title: "Video", desc: "To know about our work, watch some videos." },
-  { imgUrl: articleImg, title: "Articles", desc: "Do you want to read articles about our work?" },
-  { imgUrl: caseStudyImg, title: "Case Study", desc: "Check out case studies of our previous work." },
+{ imgUrl: videoImg, title: "Video Insights", desc: "Watch expert-led videos showcasing our solutions, processes, and real-world results." },
+{ imgUrl: articleImg, title: "Expert Articles", desc: "Read in-depth articles on technology trends, digital transformation, and best practices." },
+{ imgUrl: caseStudyImg, title: "Client Case Studies", desc: "Explore how we’ve helped businesses solve challenges and achieve measurable outcomes." },
 ];
 
 const Blog = () => {
@@ -18,11 +18,12 @@ const Blog = () => {
   const prev = () => setActive((prev) => (prev === 0 ? blogData.length - 1 : prev - 1));
 
   return (
-    <section className="blog">
+    <section className="blog" id= 'blog'>
       <div className="container">
         <div className="blog__top-content">
-          <h6 className="subtitle">Our Blog</h6>
-          <h2>Let's have a look from our <span className="highlight">Blog</span></h2>
+          <h6 className="subtitle">Insights & Resources</h6>
+
+<h2>Explore Insights, Case Studies & <span className="highlight">Expert Perspectives</span></h2>
         </div>
 
         <div className="blog__carousel">
@@ -52,7 +53,8 @@ const Blog = () => {
                     <img src={item.imgUrl} alt={item.title} />
                   </div>
                   <p className="blog__desc">{item.desc}</p>
-                  <span className="learn__more">Learn More →</span>
+                 <span className="learn__more">Read More →</span>
+
                 </div>
               );
             })}

@@ -4,35 +4,36 @@ import "../../styles/Services.css";
 const servicesData = [
   {
     icon: "ri-apps-line",
-    title: "App Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+title: " App Development",
+description: "High-performance iOS, Android, and cross-platform apps built for scale.",
   },
   {
     icon: "ri-code-s-slash-line",
-    title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+title: " Web Development",
+description: "Secure, scalable web and software solutions for growing businesses.",
   },
   {
     icon: "ri-computer-line",
-    title: "IT Consultancy",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+title: "AI & IT Consulting",
+description: "Secure, scalable web and software solutions for growing businesses.",
   },
 
     {
     icon: "ri-bar-chart-line",
-    title: "Digital Marketing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+title: "Digital Marketing",
+description: "SEO and performance-driven marketing focused on real growth.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="service">
+    <section id="services">
       <div className="container">
         <div className="services__top-content">
           <h6 className="subtitle">Our Services</h6>
-          <h2>Save time managing your business with</h2>
-          <h3 className="services__heading">Our best Services</h3>
+         <h2>End-to-End IT Services Designed</h2>
+<h3 className="services__heading">to Scale Your Business</h3>
+
 
         </div>
 
