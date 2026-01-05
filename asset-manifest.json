@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/consulting-firm/static/css/main.5742d3f3.css",
+    "main.js": "/consulting-firm/static/js/main.488166db.js",
+    "static/media/remixicon.svg?t=1766743011500": "/consulting-firm/static/media/remixicon.4a5c730580b89554671b.svg",
+    "static/media/light-hero-bg.jpg": "/consulting-firm/static/media/light-hero-bg.c9bce72c69f86814eba4.jpg",
+    "static/media/hero-img.png": "/consulting-firm/static/media/hero-img.8377632ad7c1b4d61399.png",
+    "static/media/team-03.png": "/consulting-firm/static/media/team-03.eaed5f9fef8754f6c4e3.png",
+    "static/media/team-04.png": "/consulting-firm/static/media/team-04.b738e4266a767d136ca2.png",
+    "static/media/remixicon.eot?t=1766743011500": "/consulting-firm/static/media/remixicon.5ddbf82458d503d1f44f.eot",
+    "static/media/remixicon.ttf?t=1766743011500": "/consulting-firm/static/media/remixicon.b454dc316078cbfa186e.ttf",
+    "static/media/team-01.png": "/consulting-firm/static/media/team-01.32164ad90d474f7b7dd9.png",
+    "static/media/ava-1.jpg": "/consulting-firm/static/media/ava-1.c185d7723fe40ec46830.jpg",
+    "static/media/ava-3.jpg": "/consulting-firm/static/media/ava-3.1442075049ece43143f2.jpg",
+    "static/media/about-img01.png": "/consulting-firm/static/media/about-img01.4fc23b324deccdff1190.png",
+    "static/media/ava-2.jpg": "/consulting-firm/static/media/ava-2.11e918c656d0c7851624.jpg",
+    "static/media/remixicon.woff?t=1766743011500": "/consulting-firm/static/media/remixicon.39733745abc9c14d8c7d.woff",
+    "static/media/remixicon.woff2?t=1766743011500": "/consulting-firm/static/media/remixicon.2a86a0a402e1b850cf87.woff2",
+    "static/media/video.png": "/consulting-firm/static/media/video.738b5aed181ea69d0960.png",
+    "static/media/article.png": "/consulting-firm/static/media/article.1a0e78634738b71d43ca.png",
+    "static/media/case-study.png": "/consulting-firm/static/media/case-study.e2b9562a6c09692e288e.png",
+    "static/media/slick.svg": "/consulting-firm/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/consulting-firm/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/consulting-firm/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/consulting-firm/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/consulting-firm/index.html",
+    "main.5742d3f3.css.map": "/consulting-firm/static/css/main.5742d3f3.css.map",
+    "main.488166db.js.map": "/consulting-firm/static/js/main.488166db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5742d3f3.css",
+    "static/js/main.488166db.js"
+  ]
+}
