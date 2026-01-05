@@ -41,21 +41,81 @@ body.light .services__top-content h3 {
   flex-wrap: wrap;
   gap: 15px;
 }
-
-
 .services__item {
+  position: relative;          /* REQUIRED for animation layers */
+  overflow: hidden;            /* hides overlay edges */
+
   background: var(--card-bg);
   width: 22%;
   padding: 30px 15px;
   text-align: center;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   margin-bottom: 20px;
-  border: 1px solid var(--primary-color);
 
-  
-  border: 1.5px solid rgba(48, 28, 161, 0.61);
-  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+  border: 1px solid var(--border-color);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
+
+.services__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    transparent 0%,
+    var(--card-hover-overlay) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+.services__item:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+
+.services__item:hover::before {
+  opacity: 1;
+}
+
+body.light {
+  --border-color: rgba(0, 0, 0, 0.12);
+  --card-hover-overlay: rgba(0, 0, 0, 0.04);
+}
+
+body.dark {
+  --border-color: rgba(255, 255, 255, 0.15);
+  --card-hover-overlay: rgba(255, 255, 255, 0.06);
+}
+
+body.light .services__item:hover {
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.18);
+}
+
+body.dark .services__item:hover {
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.75),      /* depth */
+    0 0 0 1px rgba(255, 255, 255, 0.08); /* subtle edge contrast */
+}
+
+body.dark .services__item {
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+
+.services__item-icon,
+.service__title,
+.services__item .description {
+  transition: transform 0.3s ease;
+}
+
+
+
 
 
 body.light .services__item:hover {

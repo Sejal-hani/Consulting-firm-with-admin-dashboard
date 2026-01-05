@@ -41,7 +41,7 @@ const TestimonialItem = ({ content, name, role, img }) => {
 const Testimonial = () => {
 const settings = {
   dots: true,
-  arrows: false,
+  arrows: true,
   infinite: true,
   speed: 500,
   slidesToShow: 1,
