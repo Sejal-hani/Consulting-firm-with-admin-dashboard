@@ -33,19 +33,26 @@ const Header = ({ theme, toggleTheme }) => {
 
           {/* Navigation */}
           <div className="navigation" ref={menuRef}>
-            <ul className="menu">
+           <ul className="menu">
+
+  {/* CLOSE ICON (MOBILE ONLY) */}
+  <span className="menu__close" onClick={toggleMenu}>
+    <i className="ri-close-line"></i>
+  </span>
+
   {nav__links.map((item, index) => (
-    <li className="menu__item" key={index}>
+    <li key={index}>
       <a
         href={item.path}
         className="menu__link"
-        onClick={() => menuRef.current.classList.remove('menu__active')}
+        onClick={toggleMenu}
       >
         {item.display}
       </a>
     </li>
   ))}
 </ul>
+
 
           </div>
 

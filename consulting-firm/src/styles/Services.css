@@ -181,8 +181,41 @@ body.light .services__item:hover {
   .services__item {
     width: 85%;          /* centered, premium look */
     margin: 0 auto;
+    
+    /* INITIAL STATE: Invisible and moved down */
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 
+      opacity 0.6s ease-out, 
+      transform 0.6s ease-out,
+      box-shadow 0.4s ease,
+      border-color 0.4s ease;
   }
 
+  /* "APPEARED" STATE: Fades in and moves to its normal resting position */
+  .services__item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* "SHINING" STATE: Lifts up and gets a shadow when it's the active card */
+  .services__item.is-active {
+    transform: translateY(-10px); /* Lift it up */
+    border-color: var(--primary-color);
+  }
+
+  /* Add the 'shine' box-shadow based on the color theme for the ACTIVE card */
+  body.light .services__item.is-active {
+    box-shadow: 0 14px 32px rgba(129, 106, 255, 0.35);
+  }
+
+  body.dark .services__item.is-active {
+    box-shadow:
+      0 12px 28px rgba(0, 0, 0, 0.75),
+      0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  /* Other mobile styles */
   .services__top-content h2 {
     font-size: 1.6rem;
   }

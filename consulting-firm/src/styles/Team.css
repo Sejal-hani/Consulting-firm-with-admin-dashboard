@@ -31,7 +31,6 @@
   cursor: pointer;
   transition: box-shadow 0.25s ease, border-color 0.25s ease;
 
-  /* 🔑 REQUIRED */
   position: relative;
 }
 
@@ -47,20 +46,17 @@
 
 .team__details {
   padding: 20px 15px;
-
-  /* 🔑 anchor for accent line */
   position: relative;
 }
 
 /* ================= ACCENT BORDER (ONLY BELOW IMAGE) ================= */
-/* 🔧 CHANGE width % to control length */
 
 .team__details::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 45%;                 /* 👈 adjust: 30% – 65% */
+  width: 45%;
   height: 2px;
   transform: translateX(-50%) scaleX(0);
   border-radius: 10px;
@@ -69,7 +65,12 @@
   transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-.team__item:hover .team__details::after {
+/* 
+  HERE IS THE CHANGE: 
+  This rule now triggers the line animation on EITHER hover OR when the card is active.
+*/
+.team__item:hover .team__details::after,
+.team__item.is-active .team__details::after {
   transform: translateX(-50%) scaleX(1);
   opacity: 1;
 }
@@ -167,3 +168,38 @@ body.dark .team__item:hover {
   margin-top: 0;
 }
  
+/* === TEAM SCROLL SHINE (PHONE ONLY) === */
+@media only screen and (max-width: 576px) {
+  .team__item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out,
+      box-shadow 0.4s ease,
+      border-color 0.4s ease;
+  }
+
+  .team__item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .team__item.is-active {
+    transform: translateY(-10px);
+    border-color: rgba(129, 106, 255, 0.8);
+  }
+
+  body.light .team__item.is-active {
+    box-shadow:
+      0 0 0 1px rgba(129, 106, 255, 0.45),
+      0 18px 45px rgba(129, 106, 255, 0.35);
+  }
+
+  body.dark .team__item.is-active {
+    box-shadow:
+      0 0 0 1px rgba(129, 106, 255, 0.6),
+      0 0 25px rgba(129, 106, 255, 0.45),
+      0 15px 40px rgba(0, 0, 0, 0.6);
+  }
+}
